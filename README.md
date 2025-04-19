@@ -7,7 +7,7 @@
 - 🛒 *Live Bidding*: Participate in real-time auctions with competitive bidding.  
 - 🧑‍💼 *User Profiles*: Create a personalized profile to manage bids, listings, and watchlists.  
 - 💬 *Seller-Buyer Interaction*: Secure messaging system for direct communication.  
-- 🔐 *Secure Payments*: Integrated with secure payment gateways to ensure safe transactions. paste kardo
+- 🔐 *Secure Payments*: Integrated with secure payment gateways to ensure safe transactions.
 
 ## 📦 Installation
 
