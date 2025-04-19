@@ -1,1 +1,1 @@
-# RareFind
+# RareFind (Online Auction Project)
