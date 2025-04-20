@@ -34,7 +34,7 @@
 
 ## ✅ To-Do
 
-- [ ] Add email notifications for bid updates  
-- [ ] Implement rating & review system for sellers  
+- [ ] Add email notifications for bid updates.
+- [ ] Implement rating & review system for sellers.  
 - [ ] Improve mobile responsiveness  
 - [ ] Add admin dashboard
