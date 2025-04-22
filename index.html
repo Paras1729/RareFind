@@ -3,72 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RareFind</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>RareFind - Discover Unique Auctions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">RareFind</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight">Rare</span>Find</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#auctions">Auctions</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button id="login-btn" class="btn">Login</button>
+                <button id="register-btn" class="btn btn-primary">Register</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <h1>Welcome to RareFind</h1>
-            <p>Discover unique and rare items from around the world</p>
-        </section>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Discover and Bid on Unique Items</h2>
+                <p>Find rare collectibles, antiques, and one-of-a-kind treasures in our curated auctions.</p>
+                <button class="btn btn-primary btn-large">Explore Auctions</button>
+            </div>
+        </div>
+    </section>
 
-        <section id="featured">
-            <h2>Featured Items</h2>
-            <div class="items-grid">
-                <div class="item">
-                    <div class="item-image"></div>
-                    <h3>Rare Item 1</h3>
-                    <p>Description of the rare item goes here</p>
+    <section id="featured-auctions" class="featured-auctions">
+        <div class="container">
+            <h2 class="section-title">Featured Auctions</h2>
+            <div class="auction-grid">
+                <div class="auction-card">
+                    <div class="auction-image">
+                        <img src="assets/images/placeholder.jpg" alt="Vintage Watch">
+                        <span class="time-left">5h 23m left</span>
+                    </div>
+                    <div class="auction-details">
+                        <h3>Vintage Omega Seamaster</h3>
+                        <p>Rare 1960s Omega Seamaster in excellent condition with original box.</p>
+                        <div class="auction-meta">
+                            <span class="current-bid">Current Bid: $1,250</span>
+                            <span class="bid-count"><i class="fas fa-gavel"></i> 8 bids</span>
+                        </div>
+                        <button class="btn btn-secondary">Place Bid</button>
+                    </div>
                 </div>
-                <div class="item">
-                    <div class="item-image"></div>
-                    <h3>Rare Item 2</h3>
-                    <p>Description of the rare item goes here</p>
+
+                <div class="auction-card">
+                    <div class="auction-image">
+                        <img src="assets/images/placeholder.jpg" alt="Rare Book">
+                        <span class="time-left">2d 7h left</span>
+                    </div>
+                    <div class="auction-details">
+                        <h3>First Edition Hemingway</h3>
+                        <p>First edition of "The Old Man and the Sea" signed by Ernest Hemingway.</p>
+                        <div class="auction-meta">
+                            <span class="current-bid">Current Bid: $3,500</span>
+                            <span class="bid-count"><i class="fas fa-gavel"></i> 12 bids</span>
+                        </div>
+                        <button class="btn btn-secondary">Place Bid</button>
+                    </div>
                 </div>
-                <div class="item">
-                    <div class="item-image"></div>
-                    <h3>Rare Item 3</h3>
-                    <p>Description of the rare item goes here</p>
+
+                <div class="auction-card">
+                    <div class="auction-image">
+                        <img src="assets/images/placeholder.jpg" alt="Art Painting">
+                        <span class="time-left">1d 3h left</span>
+                    </div>
+                    <div class="auction-details">
+                        <h3>Modern Abstract Painting</h3>
+                        <p>Original canvas by emerging artist Sofia Chen, "Urban Dreams" series.</p>
+                        <div class="auction-meta">
+                            <span class="current-bid">Current Bid: $850</span>
+                            <span class="bid-count"><i class="fas fa-gavel"></i> 5 bids</span>
+                        </div>
+                        <button class="btn btn-secondary">Place Bid</button>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="view-all">
+                <a href="#auctions" class="btn btn-outline">View All Auctions</a>
+            </div>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We specialize in finding and curating the most unique and rare items from across the globe.</p>
-        </section>
-    </main>
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Create Account</h3>
+                    <p>Sign up for free and create your RareFind profile.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Browse Auctions</h3>
+                    <p>Explore our curated collections of unique items.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Place Bids</h3>
+                    <p>Bid on items you love and track your active auctions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Win & Collect</h3>
+                    <p>Pay securely and receive your rare finds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="create-auction" class="create-auction">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Have Something Rare to Sell?</h2>
+                <p>List your unique items on RareFind and reach thousands of potential buyers.</p>
+                <button class="btn btn-primary btn-large">Create Auction</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"I found a vintage camera I'd been searching for years. The bidding process was exciting and the seller was great!"</p>
+                    <div class="testimonial-author">
+                        <span class="name">James Wilson</span>
+                        <span class="role">Collector</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: On Hold</p>
-                <p>Phone: On Hold</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RareFind</h3>
+                    <p>Connecting collectors and sellers of unique items in a trusted auction environment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#auctions">Browse Auctions</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>Twitter</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RareFind. All rights reserved.</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 RareFind. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to RareFind</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" id="switch-to-register">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                <p class="form-footer">Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/auctions.js"></script>
+    <script src="js/ui.js"></script>
 </body>
 </html> 
