@@ -25,7 +25,7 @@ A modern auction website for rare and unique items.
 
 ## Project Structure
 
-
+```
 rarefind/
 ├── index.html              # Main HTML file
 ├── css/
@@ -37,7 +37,7 @@ rarefind/
 │   └── ui.js               # UI-related functions
 └── assets/
     └── images/             # Images for the site
-
+```
 
 ## Future Improvements
 
