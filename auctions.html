@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auctions - RareFind</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight">Rare</span>Find</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="auctions.html" class="active">Auctions</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button id="login-btn" class="btn">Login</button>
+                <button id="register-btn" class="btn btn-primary">Register</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Browse Auctions</h2>
+            <p>Discover unique items and place your bids</p>
+        </div>
+    </section>
+
+    <section class="auction-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for items...">
+                    <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-dropdown">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="antiques">Antiques</option>
+                        <option value="art">Art</option>
+                        <option value="books">Books & Manuscripts</option>
+                        <option value="collectibles">Collectibles</option>
+                        <option value="jewelry">Jewelry & Watches</option>
+                        <option value="memorabilia">Memorabilia</option>
+                    </select>
+                </div>
+                <div class="filter-dropdown">
+                    <select id="price-filter">
+                        <option value="">Price Range</option>
+                        <option value="0-100">Under $100</option>
+                        <option value="100-500">$100 - $500</option>
+                        <option value="500-1000">$500 - $1,000</option>
+                        <option value="1000-5000">$1,000 - $5,000</option>
+                        <option value="5000+">$5,000+</option>
+                    </select>
+                </div>
+                <div class="filter-dropdown">
+                    <select id="time-filter">
+                        <option value="">Time Left</option>
+                        <option value="ending-soon">Ending Soon</option>
+                        <option value="today">Ending Today</option>
+                        <option value="week">Ending This Week</option>
+                        <option value="all">All Auctions</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="auction-listings" class="auction-listings">
+        <div class="container">
+            <div class="auction-grid">
+                <!-- Auction Item 1 -->
+                <div class="auction-card">
+                    <div class="auction-image">
+                        <img src="assets/images/placeholder.jpg" alt="Vintage Watch">
+                        <span class="time-left">5h 23m left</span>
+                    </div>
+                    <div class="auction-details">
+                        <h3>Vintage Omega Seamaster</h3>
+                        <p>Rare 1960s Omega Seamaster in excellent condition with original box.</p>
+                        <div class="auction-meta">
+                            <span class="current-bid">Current Bid: $1,250</span>
+                            <span class="bid-count"><i class="fas fa-gavel"></i> 8 bids</span>
+                        </div>
+                        <button class="btn btn-secondary">Place Bid</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 2 -->
+                <div class="auction-card">
+                    <div class="auction-image">
+                        <img src="assets/images/placeholder.jpg" alt="Rare Book">
+                        <span class="time-left">2d 7h left</span>
+                    </div>
+                    <div class="auction-details">
+                        <h3>First Edition Hemingway</h3>
+                        <p>First edition of "The Old Man and the Sea" signed by Ernest Hemingway.</p>
+                        <div class="auction-meta">
+                            <span class="current-bid">Current Bid: $3,500</span>
+                            <span class="bid-count"><i class="fas fa-gavel"></i> 12 bids</span>
+                        </div>
+                        <button class="btn btn-secondary">Place Bid</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 3 -->
+                <div class="auction-card">
+                    <div class="auction-image">
+                        <img src="assets/images/placeholder.jpg" alt="Art Painting">
+                        <span class="time-left">1d 3h left</span>
+                    </div>
+                    <div class="auction-details">
+                        <h3>Modern Abstract Painting</h3>
+                        <p>Original canvas by emerging artist Sofia Chen, "Urban Dreams" series.</p>
+                        <div class="auction-meta">
+                            <span class="current-bid">Current Bid: $850</span>
+                            <span class="bid-count"><i class="fas fa-gavel"></i> 5 bids</span>
+                        </div>
+                        <button class="btn btn-secondary">Place Bid</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 4 -->
+                <div class="auction-card">
+                    <div class="auction-image">
+                        <img src="assets/images/placeholder.jpg" alt="Vintage Camera">
+                        <span class="time-left">3d 12h left</span>
+                    </div>
+                    <div class="auction-details">
+                        <h3>Leica M3 Film Camera</h3>
+                        <p>Classic 1954 Leica M3 with original 50mm Summicron lens and case.</p>
+                        <div class="auction-meta">
+                            <span class="current-bid">Current Bid: $2,100</span>
+                            <span class="bid-count"><i class="fas fa-gavel"></i> 9 bids</span>
+                        </div>
+                        <button class="btn btn-secondary">Place Bid</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 5 -->
+                <div class="auction-card">
+                    <div class="auction-image">
+                        <img src="assets/images/placeholder.jpg" alt="Antique Furniture">
+                        <span class="time-left">6d 8h left</span>
+                    </div>
+                    <div class="auction-details">
+                        <h3>Victorian Writing Desk</h3>
+                        <p>19th century mahogany writing desk with inlaid leather top and brass hardware.</p>
+                        <div class="auction-meta">
+                            <span class="current-bid">Current Bid: $1,800</span>
+                            <span class="bid-count"><i class="fas fa-gavel"></i> 6 bids</span>
+                        </div>
+                        <button class="btn btn-secondary">Place Bid</button>
+                    </div>
+                </div>
+
+                <!-- Auction Item 6 -->
+                <div class="auction-card">
+                    <div class="auction-image">
+                        <img src="assets/images/placeholder.jpg" alt="Vinyl Records">
+                        <span class="time-left">4h 52m left</span>
+                    </div>
+                    <div class="auction-details">
+                        <h3>Rare Vinyl Collection</h3>
+                        <p>Set of 5 first-press Beatles vinyl records in near mint condition.</p>
+                        <div class="auction-meta">
+                            <span class="current-bid">Current Bid: $950</span>
+                            <span class="bid-count"><i class="fas fa-gavel"></i> 14 bids</span>
+                        </div>
+                        <button class="btn btn-secondary">Place Bid</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="btn btn-outline page-btn active">1</button>
+                <button class="btn btn-outline page-btn">2</button>
+                <button class="btn btn-outline page-btn">3</button>
+                <button class="btn btn-outline page-btn">4</button>
+                <button class="btn btn-outline next-btn">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RareFind</h3>
+                    <p>Connecting collectors and sellers of unique items in a trusted auction environment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="auctions.html">Browse Auctions</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RareFind. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to RareFind</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                <p class="form-footer">Don't have an account? <a href="#" id="switch-to-register">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create an Account</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                <p class="form-footer">Already have an account? <a href="#" id="switch-to-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/auctions.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html> 
