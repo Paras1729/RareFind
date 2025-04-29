@@ -45,7 +45,7 @@ rarefind/
 ## Future Improvements
 
 - Backend integration with a database
-- Payment processing
+- Faster Payment processing
 - User profiles and ratings
 - Advanced search and filtering
 - Auction categories and tags
