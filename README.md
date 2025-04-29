@@ -2,13 +2,15 @@
 
 A modern auction website for rare and unique items.
 
+Preview:- https://rare-find.vercel.app/
+
 ## Features
 
 - User authentication (register, login, logout)
 - Browse available auctions
 - Create new auction listings
 - Place bids on items
-- Real-time auction updates
+- Real-time auction updates (soon)
 - Responsive design for mobile and desktop
 
 ## Tech Stack
@@ -25,7 +27,7 @@ A modern auction website for rare and unique items.
 
 ## Project Structure
 
-```
+
 rarefind/
 ├── index.html              # Main HTML file
 ├── css/
@@ -35,9 +37,11 @@ rarefind/
 │   ├── auth.js             # Authentication functions
 │   ├── auctions.js         # Auction handling functions
 │   └── ui.js               # UI-related functions
-└── assets/
-    └── images/             # Images for the site
-```
+└── about.html              # About the page
+└── auctions.html           # Auction listings page
+└── how-it-works.html       # Platform guide page
+
+
 
 ## Future Improvements
 
@@ -45,4 +49,4 @@ rarefind/
 - Payment processing
 - User profiles and ratings
 - Advanced search and filtering
-- Auction categories and tags
+- Auction categories and tags
