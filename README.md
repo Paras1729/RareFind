@@ -1,6 +1,6 @@
 # RareFind
 
-A modern auction website for rare and unique items.
+A modern auction website for antique and unique items.
 
 Preview:- https://rare-find.vercel.app/
 
