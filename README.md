@@ -27,7 +27,7 @@ Preview:- https://rare-find.vercel.app/
 
 ## Project Structure
 
-
+```
 rarefind/
 ├── index.html              # Main HTML file
 ├── css/
@@ -40,8 +40,7 @@ rarefind/
 └── about.html              # About the page
 └── auctions.html           # Auction listings page
 └── how-it-works.html       # Platform guide page
-
-
+```
 
 ## Future Improvements
 
