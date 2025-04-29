@@ -51,16 +51,44 @@ function setupResponsiveNav() {
     // Handle responsive navigation
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('nav');
+    const body = document.body;
     
     if (mobileMenuBtn && nav) {
         mobileMenuBtn.addEventListener('click', () => {
             nav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+            mobileMenuBtn.innerHTML = nav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
         });
         
-        // Close mobile menu when window is resized to desktop
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768 && nav.classList.contains('active')) {
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (nav.classList.contains('active') && 
+                !nav.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
                 nav.classList.remove('active');
+                body.classList.remove('menu-open');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                body.classList.remove('menu-open');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                nav.classList.remove('active');
+                body.classList.remove('menu-open');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
             }
         });
     }
